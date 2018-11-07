@@ -1,6 +1,6 @@
 # wechat-admin
 
-> A Vue.js project
+> wechat-admin
 
 ## Build Setup
 
