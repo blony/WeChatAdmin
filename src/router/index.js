@@ -19,8 +19,50 @@ export const constantRouterGroup = [
         component: () => import('@/views/dashboard/index')
       }
     ]
+  },
+  {
+    path: '/article',
+    component: Layout,
+    redirect: '/article/publish',
+    name: '图文发布',
+    hidden: true,
+    children: [
+      {
+        path: 'publish',
+        name: '发布文章',
+        component: () => import('@/views/article/publish'),
+        meta: {title: '发布文章', icon: ''}
+      },
+      {
+        path: 'message',
+        name: '文章留言',
+        component: () => import('@/views/article/message'),
+        meta: {title: '文章留言', icon: ''}
+      }
+    ]
+  },
+  {
+    path: '/tmpMessage',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/tmpMessage/index'),
+        meta: {title: '模板消息', icon: ''}
+      }
+    ]
+  },
+  {
+    path: '/customMenu',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/customMenu/index'),
+        meta: {title: '自定义菜单', icon: ''}
+      }
+    ]
   }
-
 ]
 
 export default new Router({
