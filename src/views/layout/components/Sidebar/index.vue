@@ -26,7 +26,7 @@
       </el-submenu>
       <el-menu-item index="2">
         <i class="el-icon-menu"></i>
-        <span slot="title">模板消息</span>
+        <span slot="title"><router-link to="/tmpInfo/index">模板消息</router-link></span>
       </el-menu-item>
       <el-menu-item index="3">
         <i class="el-icon-document"></i>
@@ -34,7 +34,7 @@
       </el-menu-item>
       <el-menu-item index="4">
         <i class="el-icon-setting"></i>
-        <span slot="title">自定义菜单</span>
+        <span slot="title"><router-link to="/customMenu/index">自定义菜单</router-link></span>
       </el-menu-item>
     </el-menu>
 </template>

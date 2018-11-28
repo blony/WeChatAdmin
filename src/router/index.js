@@ -42,12 +42,12 @@ export const constantRouterGroup = [
     ]
   },
   {
-    path: '/tmpMessage',
+    path: '/tmpInfo',
     component: Layout,
     children: [
       {
         path: 'index',
-        component: () => import('@/views/tmpMessage/index'),
+        component: () => import('@/views/tmpInfo/index'),
         meta: {title: '模板消息', icon: ''}
       }
     ]
